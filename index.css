@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'LucidaHandwriting';
+    src: local('LucidaHandwriting'),
+      url('fonts/Lucida-Handwriting/Lucida-Handwriting-Italic.ttf') format('truetype');
+    font-display: swap;
+  }

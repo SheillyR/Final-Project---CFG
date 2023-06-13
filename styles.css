@@ -1,0 +1,113 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.section-container-text {
+  text-align: center;
+  padding: 30px;
+  margin-bottom: 25px;
+}
+
+.section-container-text h3 {
+  font-size: 24px;
+  font-family: "LucidaHandwriting";
+}
+
+.section-container-text p {
+  font-size: 14px;
+  margin-top: 40px;
+  font-family: "LucidaHandwriting";
+}
+
+.section-container-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.section-container-images img {
+  width: 280px;
+}
+
+.section-container-button {
+  padding: 30px 0px;
+}
+
+.main-button {
+  background-color: #ffb84d;
+  border: 0px solid transparent;
+  color: white;
+  text-align: center;
+  width: 280px;
+  height: 60px;
+  font-size: 18px;
+  font-family: "LucidaHandwriting";
+}
+
+.main-button:hover {
+  opacity: 0.85;
+}
+
+.contact-title {
+  font-size: 32px;
+  font-family: "LucidaHandwriting";
+  padding: 10px;
+  margin-top: 20px;
+  color: #ffb84d;
+}
+
+.form-container-input {
+  padding: 18px;
+}
+
+label {
+  font-size: 17px;
+  font-family: "LucidaHandwriting";
+  display: block;
+}
+
+.input-text {
+  width: 600px;
+  resize: none;
+  height: 30px;
+  padding: 8px;
+  font-size: 17px;
+  font-family: "LucidaHandwriting";
+  background-color: #fafafa;
+  border: 1px solid #a9a9a9;
+}
+
+.input-message {
+  width: 600px;
+  resize: none;
+  height: 90px;
+  padding: 10px;
+  font-size: 17px;
+  font-family: "LucidaHandwriting";
+  background-color: #fafafa;
+  border: 1px solid #a9a9a9;
+}
+
+.form-container-bttn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+@media (max-width: 720px) {
+  .input-text {
+    width: 300px;
+  }
+}
