@@ -1,6 +1,314 @@
 body {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  background: #f9f9f9;
+}
+
+button {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  font-family: "LucidaHandwriting";
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.navigation-menu {
+  box-sizing: border-box;
+  min-width: 100%;
+  height: 60px;
+  margin: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ff9933;
+  color: #f9f9f9;
+  font-family: "Cambria";
+}
+
+@media only screen and (min-width: 768px) {
+  .navigation-menu {
+    justify-content: space-between;
+    padding: 0 16px;
+  }
+}
+
+.navigation-menu__overlay {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  transition: 0.3s;
+}
+
+body.open .navigation-menu__overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .navigation-menu__overlay {
+    display: none;
+  }
+}
+
+.hamburger-menu {
+  position: absolute;
+  padding: 0;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+}
+
+#close-icon {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
+
+.site-identity-logo {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  font-size: 30px;
+  font-family: "LucidaHandwriting";
+}
+/*
+.site-identity-logo:hover {
+  color: #fe2e64;
+}
+*/
+.navigation-menu__labels {
+  position: fixed;
+  visibility: hidden;
+  z-index: 3;
+  top: 50px;
+  left: 0;
+  width: 50%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #000000;
+  transition: translate 0.3s;
+  translate: -100% 0;
+}
+/*
+.navigation-menu__labels:hover {
+  color: #fe2e64;
+}
+*/
+@media only screen and (min-width: 768px) {
+  .navigation-menu__labels {
+    position: static;
+    top: 0;
+    left: 0;
+    translate: 0 0;
+    width: auto;
+    background: transparent;
+    flex-direction: row;
+    visibility: visible;
+  }
+}
+
+body.open .navigation-menu__labels {
+  translate: 0 0;
+  visibility: visible;
+}
+
+.navigation-menu__labels > button {
+  color: #f9f9f9;
+  background: transparent;
+  padding: 0 8px;
+}
+
+.navigation-menu__labels > button.active {
+  color: inherit;
+}
+
+HTML CSSResult Skip Results Iframe EDIT ON body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.footer {
+  /*position: fixed;*/
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #ff9933;
+  padding: 30px 0px;
+  font-family: "LucidaHandwriting";
+  text-align: center;
+}
+
+.footer .row {
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.footer .row a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.footer .row a:hover {
+  color: #fff;
+}
+
+.footer .row ul {
+  width: 100%;
+}
+
+.footer .row ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.footer .row a i {
+  font-size: 2em;
+  margin: 0% 1%;
+}
+
+@media (max-width: 720px) {
+  .footer {
+    text-align: left;
+    padding: 5%;
+  }
+  .footer .row ul li {
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
+  }
+  .footer .row a i {
+    margin: 0% 3%;
+  }
+}
+.header {
+  background: url("http://a.top4top.net/p_397znzmu1.png") center center fixed;
+  color: #fff;
+  height: 1000px;
+  position: relative;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -msn-background-size: cover;
+}
+.header .overlay {
+  background: rgba(167, 78, 212, 0.7);
+  width: 100%;
+  height: 100%;
+}
+
+.header .navbar-default {
+  background-color: transparent !important;
+  border-color: transparent;
+  background-image: none;
+  box-shadow: none;
+}
+.header .navbar-defaul .navlogo {
+  padding: 20px;
+}
+.header .navbar-default .navbar-brand {
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 30px;
+  margin-left: 40px;
+  color: #fff;
+}
+.header .navbar-default .navbar-nav > li {
+  margin-left: 26px;
+}
+li {
+  display: inline;
+}
+.header .navbar-default .navbar-nav > li > a {
+  font-size: 20px;
+  color: #fff;
+  border-bottom: 1px solid transparent;
+}
+.header .navbar-default .navbar-nav > li:hover a {
+  color: #333;
+  border-bottom: 1px solid #fff;
+}
+.header .nav-links {
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.header .navbar-toggle {
+  margin: 10px 0;
+  background: #36c;
+  color: #fff;
+}
+
+.landingpage {
+  display: none;
+  position: absolute;
+  content: " ";
+  z-index: -99;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nav-dots {
+  display: none;
+}
+
+.dot {
+  text-align: center;
+  height: 15px;
+  width: 15px;
+  margin: -10 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.9s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 4000ms;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .section-container {
@@ -8,6 +316,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 20px 0px;
+  margin-top: 40px;
 }
 
 .section-container-text {
@@ -42,10 +351,11 @@ body {
 
 .section-container-button {
   padding: 30px 0px;
+  margin-bottom: 20px;
 }
 
 .main-button {
-  background-color: #ffb84d;
+  background-color: #ff9933;
   border: 0px solid transparent;
   color: white;
   text-align: center;
@@ -63,8 +373,8 @@ body {
   font-size: 32px;
   font-family: "LucidaHandwriting";
   padding: 10px;
-  margin-top: 20px;
-  color: #ffb84d;
+  margin-top: 60px;
+  color: #ff9933;
 }
 
 .form-container-input {
@@ -72,7 +382,7 @@ body {
 }
 
 label {
-  font-size: 17px;
+  font-size: 14px;
   font-family: "LucidaHandwriting";
   display: block;
 }
@@ -80,7 +390,7 @@ label {
 .input-text {
   width: 600px;
   resize: none;
-  height: 30px;
+  height: 20px;
   padding: 8px;
   font-size: 17px;
   font-family: "LucidaHandwriting";
@@ -91,7 +401,7 @@ label {
 .input-message {
   width: 600px;
   resize: none;
-  height: 90px;
+  height: 80px;
   padding: 10px;
   font-size: 17px;
   font-family: "LucidaHandwriting";
@@ -104,10 +414,19 @@ label {
   justify-content: center;
   margin-top: 20px;
   padding: 20px;
+  margin-bottom: 20px;
 }
 
-@media (max-width: 720px) {
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 720px) {
   .input-text {
+    width: 300px;
+  }
+  .input-message {
     width: 300px;
   }
 }

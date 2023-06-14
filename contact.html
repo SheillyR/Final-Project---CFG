@@ -7,26 +7,55 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <nav class="navigation-menu">
+      <div
+        class="navigation-menu__overlay"
+        onclick="toggleMenuClicked1()"
+      ></div>
+      <button
+        type="button"
+        class="hamburger-menu"
+        onclick="toggleMenuClicked2()"
+      >
+        <span class="material-icons" id="open-icon1">menu</span>
+        <span class="material-icons" id="close-icon1">close</span>
+      </button>
+      <h1 class="site-identity-logo">
+        <a href="index.html">Le Bijou</a>
+      </h1>
+      <section class="navigation-menu__labels">
+        <button type="button">
+          <a href="index.html">Home</a>
+        </button>
+        <button type="button">About</button>
+        <button type="button">Our Cocktails</button>
+        <button type="button">Our Bar</button>
+        <button type="button">
+          <a href="contact.html">Contact Us</a>
+        </button>
+      </section>
+    </nav>
+
     <section class="section-container">
       <h2 class="contact-title">Contact Us</h2>
       <form class="form-container" method="POST">
         <div class="form-container-input">
           <label>Name</label>
-          <input
-            class="input-text"
-            type="text"
-            name="name"
-          />
+          <input class="input-text" type="text" name="name" />
         </div>
         <div class="form-container-input">
           <label>Last Name</label>
-          <input
-            class="input-text"
-            type="text"
-            name="lastName"
-          />
+          <input class="input-text" type="text" name="lastName" />
         </div>
         <div class="form-container-input">
           <label>Email</label>
@@ -41,5 +70,28 @@
         </div>
       </form>
     </section>
+
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+
+        <div class="row">
+          <ul>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="#">Our Bar</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Career</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
