@@ -7,10 +7,21 @@
     <title>Le Bijou</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cambria:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap"
       rel="stylesheet"
@@ -18,29 +29,22 @@
   </head>
   <body>
     <nav class="navigation-menu">
-      <div
-        class="navigation-menu__overlay"
-        onclick="toggleMenuClicked1()"
-      ></div>
+      <div class="navigation-menu__overlay" onclick="toggleMenuClicked()"></div>
       <button
         type="button"
         class="hamburger-menu"
-        onclick="toggleMenuClicked2()"
+        onclick="toggleMenuClicked()"
       >
-        <span class="material-icons" id="open-icon1">menu</span>
-        <span class="material-icons" id="close-icon1">close</span>
+        <span class="material-icons" id="open-icon">menu</span>
+        <span class="material-icons" id="close-icon">close</span>
       </button>
-      <h1 class="site-identity-logo">
-        <a href="index.html">Le Bijou</a>
-      </h1>
+      <h1 class="site-identity-logo">Le Bijou</h1>
       <section class="navigation-menu__labels">
-        <button type="button">Home</button>
+        <button type="button"><a href="index.html">Home</a></button>
         <button type="button">About</button>
         <button type="button">Our Cocktails</button>
-        <button type="button">Our Bar</button>
-        <button type="button">
-          <a href="contact.html">Contact Us</a>
-        </button>
+        <button type="button">Our Bars</button>
+        <button type="button"><a href="contact.html">Contact Us</a></button>
       </section>
     </nav>
     <!-- Slideshow container -->

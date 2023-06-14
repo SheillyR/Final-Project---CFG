@@ -1,5 +1,4 @@
 let slideIndex = 0;
-showSlides();
 
 const toggleMenuClicked = () => {
   const body = document.body;
@@ -16,6 +15,8 @@ const toggleMenuClicked = () => {
     closeIcon.style.display = "none";
   }
 };
+
+showSlides();
 
 function showSlides() {
   let i;
