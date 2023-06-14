@@ -430,3 +430,13 @@ a {
     width: 300px;
   }
 }
+.container {
+  max-width: 930px;
+  margin-top: 150px;
+  z-index: -99;
+}
+
+
+
+
+
